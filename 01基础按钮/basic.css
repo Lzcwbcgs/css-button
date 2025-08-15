@@ -1,0 +1,48 @@
+/* .btn-1,
+.btn-1 *,
+.btn-1 :after,
+.btn-1 :before,
+.btn-1:after, */
+.btn-1:before {
+  border: 0 solid;       /* 设置伪元素边框：宽度 0，样式 solid（实际不显示边框） */
+  box-sizing: border-box; /* 盒模型：宽度/高度包含 padding 和 border */
+}
+.btn-1 {
+  -webkit-tap-highlight-color: transparent;                                          /* 禁用移动端点击时的高亮效果 */
+  -webkit-appearance: button;                                                        /* 强制元素渲染为原生按钮样式（覆盖浏览器默认） */
+  background-color: #000;                                                          /* 背景色：黑色 */
+  background-image: none;                                                            /* 清除默认背景图像（如渐变） */
+  color: #fff;                                                                     /* 文字颜色：白色 */
+  cursor: pointer;                                                                   /* 鼠标悬停时显示指针（表示可点击） */
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,          /* 字体栈：优先使用系统无衬线字体 */
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,                  
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;          
+  font-size: 100%;                                                                   /* 字体大小：继承父元素（或浏览器默认） */
+  font-weight: 900;                                                                  /* 字重：加粗（最粗） */
+  line-height: 1.5;                                                                  /* 行高：1.5 倍字体高度 */
+  margin: 0;                                                                         /* 外边距：0（避免默认间距） */
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);                       /* 遮罩效果（罕见用法，可能用于抗锯齿） */
+  padding: 0;                                                                        /* 内边距：0（后续被覆盖） */
+  text-transform: uppercase;                                                         /* 文本转大写 */
+}
+.btn-1:disabled {
+  cursor: default; /* 禁用时鼠标显示默认箭头（非指针） */
+}
+.btn-1:-moz-focusring {
+  outline: auto; /* Firefox 中显示默认焦点轮廓（键盘导航时可见） */
+}
+.btn-1 svg {
+  display: block;           /* SVG 显示为块级元素（独占一行） */
+  vertical-align: middle;   /* 垂直对齐：居中（与文本对齐） */
+}
+.btn-1 [hidden] {
+  display: none; /* 隐藏带有 hidden 属性的子元素 */
+}
+.btn-1 {
+  border-radius: 99rem;      /* 圆角：超大值（实现“胶囊”形状） */
+  border-width: 2px;         /* 边框宽度：2px（需配合 border-style 和 border-color 生效） */
+  padding: 0.8rem 3rem;      /* 内边距：上下 0.8rem，左右 3rem */
+}
+.btn-1:hover {
+  color: #999; /* 悬停时文字颜色变为浅灰色 */
+}
